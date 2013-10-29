@@ -90,7 +90,7 @@ def _toll_way_daemon():
     rule['tp_dst'] = row[5]
     tollway_rule.append(rule)
     lastTID = rule['t_id']
-    print row
+    # print row
   while len(tollway_rule) > 0:
     rule = tollway_rule.pop()
     if rule['end'] < time.time():
